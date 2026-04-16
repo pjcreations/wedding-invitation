@@ -3,112 +3,159 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ummadevi & Giridhar Wedding Invitation</title>
-  <meta name="description" content="A colorful cinematic wedding invitation" />
+  <title>Ummadevi & Giridhar | Wedding Invitation</title>
+  <meta name="description" content="Luxury colorful Indian wedding invitation" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Noto+Serif+Telugu:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <audio id="bgMusic" loop>
-    <source src="music/wedding-music.mp3" type="audio/mpeg">
-  </audio>
-
-  <div id="intro" class="intro-screen">
-    <div class="intro-content">
-      <img src="images/ganesha.png" alt="Lord Ganesha" class="intro-ganesha">
-      <p class="intro-blessing">With divine blessings</p>
-      <h1 class="intro-title">A Wedding Celebration</h1>
-      <p class="intro-subtitle">Ummadevi (Akhila) & Giridhar Goud</p>
-      <button id="enterBtn" class="primary-btn">Enter Invitation</button>
-    </div>
-  </div>
-
   <div class="petals">
-    <span>🌸</span><span>🌺</span><span>🌸</span><span>🌺</span>
-    <span>🌸</span><span>🌺</span><span>🌸</span><span>🌺</span>
+    <span>🌸</span>
+    <span>🌺</span>
+    <span>🌼</span>
+    <span>🌸</span>
+    <span>🌺</span>
+    <span>🌼</span>
+    <span>🌸</span>
+    <span>🌺</span>
   </div>
 
-  <section class="hero">
-    <div class="hero-overlay">
-      <p class="hero-top">Srirasthu • Shubhamasthu • Avighnamasthu</p>
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-top">శ్రీరస్తు • శుభమస్తు • అవిఘ్నమస్తు</p>
       <h1 class="main-names">Ummadevi <span>&</span> Giridhar</h1>
-      <p class="hero-line">Together with our families, we invite you to celebrate our wedding</p>
+      <p class="hero-line">Together with our family, we invite you to celebrate our wedding</p>
+      <p class="hero-telugu">మా వివాహ మహోత్సవానికి కుటుంబ సమేతంగా విచ్చేసి ఆశీర్వదించగలరు</p>
 
       <div class="hero-buttons">
-        <button id="musicBtn" class="primary-btn">Play Music</button>
-        <a href="#details" class="secondary-btn">View Details</a>
+        <a href="#wedding-details" class="primary-btn">Open Invitation</a>
       </div>
     </div>
   </section>
 
-  <section class="slideshow-section">
-    <h2 class="section-title">Our Celebration</h2>
-    <div class="slideshow">
-      <img src="images/slide1.jpg" class="slide active" alt="Wedding Slide 1">
-      <img src="images/slide2.jpg" class="slide" alt="Wedding Slide 2">
-      <img src="images/slide3.jpg" class="slide" alt="Wedding Slide 3">
+  <section class="gif-section">
+    <div class="gif-card">
+      <img src="images/wedding.gif" alt="Wedding Celebration GIF" class="main-gif">
+      <div class="gif-overlay">
+        <p>A colorful celebration of love, family, and blessings</p>
+      </div>
     </div>
   </section>
 
-  <section id="details" class="details-grid">
-    <div class="card">
-      <h3>Wedding Details</h3>
-      <p><strong>Date:</strong> Sunday, 03 May 2026</p>
-      <p><strong>Time:</strong> 10:14 A.M.</p>
-      <p><strong>Lagnam:</strong> Meedhuna Lagnam</p>
+  <section id="wedding-details" class="details-section">
+    <div class="section-heading light">
+      <p class="section-kicker">Main Invitation</p>
+      <h2>Wedding Details</h2>
     </div>
 
-    <div class="card">
-      <h3>Venue</h3>
-      <p><strong>Vallapu Reddy Ram Reddy Function Hall</strong></p>
-      <p>Kanchiraopally Road, Pebbair, Wanaparthy Dist.</p>
-      <a class="small-btn" target="_blank" href="https://www.google.com/maps/search/Vallapu+Reddy+Ram+Reddy+Function+Hall+Kanchiraopally+Road+Pebbair+Wanaparthy">Open Map</a>
-    </div>
+    <div class="details-grid">
+      <div class="detail-card">
+        <h3>Bride & Groom</h3>
+        <p><strong>Ummadevi (Akhila)</strong></p>
+        <p>with</p>
+        <p><strong>Giridhar Goud</strong></p>
+      </div>
 
-    <div class="card">
-      <h3>Hosted By</h3>
-      <p>Smt. Javaji Latha</p>
-      <p>Sri Javaji Yadagiri Goud</p>
-      <p>Kadukuntla Village, Wanaparthy Mandal & Dist.</p>
-    </div>
+      <div class="detail-card">
+        <h3>Sumuhurtham</h3>
+        <p><strong>Date:</strong> Sunday, 03 May 2026</p>
+        <p><strong>Time:</strong> 10:14 A.M.</p>
+        <p><strong>Lagnam:</strong> Meedhuna Lagnam</p>
+      </div>
 
-    <div class="card">
-      <h3>Countdown</h3>
-      <div id="countdown" class="countdown">Loading...</div>
-    </div>
-  </section>
+      <div class="detail-card">
+        <h3>Venue</h3>
+        <p><strong>Vallapu Reddy Ram Reddy Function Hall</strong></p>
+        <p>Kanchiraopally Road, Pebbair</p>
+        <p>Wanaparthy Dist.</p>
+        <a
+          href="https://www.google.com/maps/search/Vallapu+Reddy+Ram+Reddy+Function+Hall+Kanchiraopally+Road+Pebbair+Wanaparthy"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="small-btn"
+        >
+          View Location
+        </a>
+      </div>
 
-  <section class="rsvp-section">
-    <div class="rsvp-card">
-      <h2 class="section-title">RSVP</h2>
-      <form id="rsvpForm">
-        <input type="text" id="guestName" placeholder="Your Name" required>
-        <input type="number" id="guestCount" placeholder="Number of Guests" min="1" required>
-        <select id="attendance" required>
-          <option value="">Will you attend?</option>
-          <option value="Yes, happily attending">Yes, happily attending</option>
-          <option value="Sorry, unable to attend">Sorry, unable to attend</option>
-        </select>
-        <textarea id="message" placeholder="Blessings / Message"></textarea>
-        <button type="submit" class="primary-btn full-btn">Submit RSVP</button>
-      </form>
-      <p id="rsvpResult" class="rsvp-result"></p>
+      <div class="detail-card">
+        <h3>Inviting By</h3>
+        <p><strong>Javaji’s Family</strong></p>
+        <p class="small-note">With love, warmth, and heartfelt blessings</p>
+      </div>
     </div>
   </section>
 
-  <section class="share-section">
-    <h2 class="section-title">Share the Invitation</h2>
-    <a
-      id="whatsappShare"
-      class="whatsapp-btn"
-      target="_blank"
-      href="#"
-    >
-      Share on WhatsApp
-    </a>
+  <section class="timeline-section">
+    <div class="section-heading">
+      <p class="section-kicker">Event Flow</p>
+      <h2>Wedding Timeline</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Welcome</h3>
+          <p>Guests arrive and receive blessings</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Muhurtham</h3>
+          <p>Sunday, 03 May 2026 • 10:14 A.M.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Blessings</h3>
+          <p>Family and friends bless the couple</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Celebration</h3>
+          <p>Joy, togetherness, and unforgettable memories</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="countdown-section">
+    <div class="countdown-card">
+      <h2>Countdown to the Wedding</h2>
+      <div id="countdown" class="countdown-box">Loading...</div>
+      <p class="countdown-note">We look forward to celebrating with you</p>
+    </div>
+  </section>
+
+  <section class="family-section">
+    <div class="section-heading light">
+      <p class="section-kicker">Invitation</p>
+      <h2>With Love & Warm Regards</h2>
+    </div>
+
+    <div class="family-card">
+      <p class="family-text">
+        We warmly invite you and your family to grace this auspicious occasion
+        and bless the couple with your presence.
+      </p>
+      <p class="family-telugu">
+        మా ఆనంద క్షణాల్లో మీ సాన్నిధ్యం మాకు ఎంతో సంతోషాన్ని ఇస్తుంది.
+        కుటుంబ సమేతంగా విచ్చేసి వధూవరులను ఆశీర్వదించగలరు.
+      </p>
+    </div>
   </section>
 
   <section class="diyas-section">
@@ -118,7 +165,8 @@
   </section>
 
   <footer class="footer">
-    <p>We warmly invite you with family and friends to bless the couple.</p>
+    <p>Inviting By Javaji’s Family</p>
+    <p class="footer-small">Made with love for a memorable family celebration</p>
   </footer>
 
   <script src="script.js"></script>
