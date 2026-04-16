@@ -4,86 +4,126 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Javaji Wedding Invitation</title>
+  <meta name="description" content="Wedding invitation of Ummadevi (Akhila) and Giridhar Goud" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Noto+Serif+Telugu:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="floating-flowers flower-1">✿</div>
-  <div class="floating-flowers flower-2">❀</div>
-  <div class="floating-flowers flower-3">✿</div>
+  <div class="page-bg"></div>
+  <div class="bg-overlay"></div>
+  <div class="sparkles"></div>
 
-  <section class="hero">
-    <div class="overlay">
-      <p class="top-blessing">Srirasthu &nbsp; • &nbsp; Shubhamasthu &nbsp; • &nbsp; Avighnamasthu</p>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="top-mantra">
+        <span>Srirasthu</span>
+        <span>Shubhamasthu</span>
+        <span>Avighnamasthu</span>
+      </div>
+
+      <div class="ganesha-wrap">
+        <img src="images/ganesha.png" alt="Lord Ganesha" class="ganesha-img" />
+      </div>
+
+      <p class="invite-small">With the blessings of Lord Ganesha and Shiva-Parvathi</p>
       <h1 class="main-title">Javaji’s Wedding Invitation</h1>
-      <p class="invite-line">
+      <p class="hero-text">
         We cordially request your gracious presence with family and friends
-        on the auspicious occasion of the marriage of our daughter
+        on the auspicious occasion of the marriage of our beloved daughter
       </p>
 
-      <h2 class="bride-name">Chi.La.Sow. Ummadevi (Akhila)</h2>
-      <p class="with-text">with</p>
-      <h2 class="groom-name">Chi. Giridhar Goud</h2>
+      <h2 class="bride-name">Ummadevi (Akhila)</h2>
+      <div class="ampersand">&</div>
+      <h2 class="groom-name">Giridhar Goud</h2>
 
-      <p class="family-line">
+      <p class="sub-family">
         Son of Smt. & Sri Katamoni Savithramma, Ayyanna Goud, Kalwarala Village
       </p>
 
-      <a href="#details" class="btn">View Invitation</a>
+      <a href="#details" class="primary-btn">Open Invitation</a>
     </div>
-  </section>
+  </header>
 
-  <section class="section card" id="details">
-    <h2>Sumuhurtham</h2>
-    <p><strong>Date:</strong> Sunday, 03 May 2026</p>
-    <p><strong>Time:</strong> 10:14 A.M.</p>
-    <p><strong>Lagnam:</strong> Meedhuna Lagnam</p>
-  </section>
+  <main class="main-content">
+    <section class="blessing-section">
+      <div class="blessing-card">
+        <img src="images/shivaparvathi.png" alt="Lord Shiva and Goddess Parvathi" class="blessing-img" />
+        <div class="blessing-text">
+          <h3>Divine Blessings</h3>
+          <p>
+            With the grace of Lord Ganesha and the eternal blessings of
+            Shiva-Parvathi, we invite you to celebrate this sacred union.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <section class="section card">
-    <h2>Venue</h2>
-    <p class="venue-name">Vallapu Reddy Ram Reddy Function Hall</p>
-    <p>Kanchiraopally Road, Pebbair, Wanaparthy Dist.</p>
-    <a
-      class="btn"
-      href="https://www.google.com/maps/search/Vallapu+Reddy+Ram+Reddy+Function+Hall+Kanchiraopally+Road+Pebbair+Wanaparthy"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Open Location
-    </a>
-  </section>
+    <section class="details-section" id="details">
+      <div class="section-card">
+        <div class="ornament"></div>
+        <h3 class="section-title">Sumuhurtham</h3>
+        <p><strong>Date:</strong> Sunday, 03 May 2026</p>
+        <p><strong>Time:</strong> 10:14 A.M.</p>
+        <p><strong>Lagnam:</strong> Meedhuna Lagnam</p>
+      </div>
 
-  <section class="section card">
-    <h2>Hosted By</h2>
-    <p class="host-names">Smt. Javaji Latha</p>
-    <p class="host-names">Sri Javaji Yadagiri Goud</p>
-    <p>Kadukuntla Village, Wanaparthy Mandal & Dist.</p>
-  </section>
+      <div class="section-card">
+        <div class="ornament"></div>
+        <h3 class="section-title">Venue</h3>
+        <p class="venue-title">Vallapu Reddy Ram Reddy Function Hall</p>
+        <p>Kanchiraopally Road, Pebbair, Wanaparthy Dist.</p>
+        <a
+          class="secondary-btn"
+          href="https://www.google.com/maps/search/Vallapu+Reddy+Ram+Reddy+Function+Hall+Kanchiraopally+Road+Pebbair+Wanaparthy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Location
+        </a>
+      </div>
 
-  <section class="section card">
-    <h2>Countdown to Wedding</h2>
-    <div id="countdown" class="countdown">Loading...</div>
-  </section>
+      <div class="section-card">
+        <div class="ornament"></div>
+        <h3 class="section-title">Hosted By</h3>
+        <p class="host-name">Smt. Javaji Latha</p>
+        <p class="host-name">Sri Javaji Yadagiri Goud</p>
+        <p>Kadukuntla Village, Wanaparthy Mandal & Dist.</p>
+      </div>
 
-  <section class="section card">
-    <h2>Contact</h2>
-    <p>8500036603</p>
-    <p>9948848050</p>
-    <p>9640082759</p>
-    <p>6302790292</p>
-  </section>
+      <div class="section-card">
+        <div class="ornament"></div>
+        <h3 class="section-title">Countdown</h3>
+        <div id="countdown" class="countdown-box">Loading...</div>
+      </div>
 
-  <section class="section card footer-card">
-    <p class="footer-line">
-      With best compliments from near and dear.
-    </p>
-    <p class="footer-note">
-      We warmly invite you and your family to bless the couple on this special day.
-    </p>
-  </section>
+      <div class="section-card">
+        <div class="ornament"></div>
+        <h3 class="section-title">Contact</h3>
+        <p>8500036603</p>
+        <p>9948848050</p>
+        <p>9640082759</p>
+        <p>6302790292</p>
+      </div>
+
+      <div class="section-card full-width-card">
+        <div class="ornament"></div>
+        <h3 class="section-title">A Warm Invitation</h3>
+        <p class="invite-para">
+          Your presence will make this joyful celebration even more special.
+          We request you and your family to join us, bless the couple,
+          and share in the happiness of this sacred occasion.
+        </p>
+        <p class="telugu-line">స్వాగతం... శుభమస్తు... కల్యాణమస్తు...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>With best compliments from near and dear</p>
+    <p class="footer-small">Made with love for family celebration</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
