@@ -20,11 +20,11 @@
       --bg1: #ff8a5c;
       --bg2: #ff5ea8;
       --bg3: #7d5cff;
+      --bg4: #ffb45f;
       --gold: #ffd56a;
       --cream: rgba(255, 248, 241, 0.92);
       --text: #4a2747;
       --shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
-      --white-soft: rgba(255, 255, 255, 0.16);
     }
 
     html {
@@ -36,7 +36,7 @@
       color: #fff;
       overflow-x: hidden;
       min-height: 100vh;
-      background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3), #ffb45f);
+      background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
       background-size: 300% 300%;
       animation: bgMove 16s ease infinite;
       position: relative;
@@ -53,6 +53,7 @@
       position: fixed;
       inset: 0;
       pointer-events: none;
+      z-index: 0;
     }
 
     .sparkles {
@@ -183,18 +184,19 @@
       border-radius: 999px;
       padding: 14px 24px;
       font-weight: 600;
-      transition: 0.2s transform, 0.2s opacity;
+      transition: 0.25s transform, 0.25s opacity, 0.25s box-shadow;
       cursor: pointer;
     }
 
     .btn:hover {
       transform: translateY(-2px);
-      opacity: 0.95;
+      opacity: 0.96;
     }
 
     .btn-primary {
       background: linear-gradient(135deg, #ff4f93, #ff9d45);
       color: #fff;
+      box-shadow: 0 14px 28px rgba(255, 79, 147, 0.28);
     }
 
     .btn-secondary {
@@ -231,7 +233,7 @@
       left: 18px;
       right: 18px;
       bottom: 18px;
-      background: linear-gradient(to top, rgba(44,12,39,0.78), rgba(44,12,39,0.18));
+      background: linear-gradient(to top, rgba(44,12,39,0.82), rgba(44,12,39,0.18));
       padding: 24px;
       border-radius: 24px;
       color: #fff;
@@ -390,6 +392,79 @@
       margin-top: 10px;
     }
 
+    .share-card {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 34px 24px;
+      border-radius: 30px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(255,255,255,0.16), rgba(255,255,255,0.10));
+      border: 1px solid rgba(255,255,255,0.18);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+      text-align: center;
+    }
+
+    .share-glow {
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      top: -120px;
+      right: -80px;
+      background: radial-gradient(circle, rgba(255,213,106,0.35), transparent 70%);
+      pointer-events: none;
+    }
+
+    .share-text {
+      max-width: 700px;
+      margin: 0 auto 22px;
+      line-height: 1.9;
+      color: #fffaf0;
+    }
+
+    .share-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .whatsapp-premium {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      box-shadow: 0 14px 30px rgba(18, 140, 126, 0.28);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .whatsapp-premium:hover {
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: 0 20px 36px rgba(18, 140, 126, 0.35);
+    }
+
+    .wa-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.18);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .whatsapp-premium .te {
+      margin-top: 2px;
+      color: rgba(255,255,255,0.92);
+    }
+
     .footer {
       text-align: center;
       padding: 36px 0 10px;
@@ -440,6 +515,16 @@
 
       .dot {
         left: 5px;
+      }
+
+      .share-card {
+        padding: 28px 18px;
+      }
+
+      .whatsapp-premium {
+        width: 100%;
+        justify-content: center;
+        padding: 15px 20px;
       }
     }
   </style>
@@ -722,6 +807,38 @@
       </div>
     </section>
 
+    <section class="section">
+      <div class="share-card">
+        <div class="share-glow"></div>
+
+        <div class="section-title">
+          <p>
+            Share Invitation
+            <span class="te">ఆహ్వానం పంచుకోండి</span>
+          </p>
+          <h2>
+            Send This Invite on WhatsApp
+            <span class="te">ఈ ఆహ్వానాన్ని వాట్సాప్‌లో పంపండి</span>
+          </h2>
+        </div>
+
+        <p class="share-text">
+          Share this wedding invitation instantly with your family and friends.
+          <span class="te">ఈ వివాహ ఆహ్వానాన్ని మీ బంధుమిత్రులతో వెంటనే పంచుకోండి.</span>
+        </p>
+
+        <div class="share-actions">
+          <a id="whatsappBtn" class="btn whatsapp-premium" target="_blank">
+            <span class="wa-icon">✆</span>
+            <span>
+              Share via WhatsApp
+              <span class="te">వాట్సాప్ ద్వారా పంపండి</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <div class="footer">
       <p>
         Inviting By Javaji’s Family
@@ -743,7 +860,10 @@
       const distance = weddingDate - now;
 
       if (distance <= 0) {
-        countdown.innerHTML = `Today is the Wedding Day!<span class="te">ఈ రోజు వివాహ మహోత్సవం!</span>`;
+        countdown.innerHTML = `
+          🎉 Today is the Wedding Day! 🎉
+          <span class="te">ఈ రోజు వివాహ మహోత్సవం!</span>
+        `;
         return;
       }
 
@@ -760,6 +880,26 @@
 
     updateCountdown();
     setInterval(updateCountdown, 1000);
+
+    const whatsappBtn = document.getElementById("whatsappBtn");
+
+    const shareMessage = encodeURIComponent(
+`💍 Wedding Invitation | వివాహ ఆహ్వానం
+
+You are warmly invited to the wedding of Ummadevi (Akhila) & Giridhar Goud.
+
+📅 Date: Sunday, 03 May 2026
+⏰ Time: 10:14 A.M.
+📍 Venue: Vallapu Reddy Ram Reddy Function Hall, Kanchiraopally Road, Pebbair, Wanaparthy Dist.
+
+మీరు కుటుంబ సమేతంగా విచ్చేసి వధూవరులను ఆశీర్వదించగలరు.
+
+🔗 ${window.location.href}`
+    );
+
+    if (whatsappBtn) {
+      whatsappBtn.href = `https://wa.me/?text=${shareMessage}`;
+    }
   </script>
 </body>
 </html>
